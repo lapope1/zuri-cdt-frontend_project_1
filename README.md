@@ -43,3 +43,5 @@ project-folder/
 - This project is for educational purposes and focuses on frontend development using HTML, CSS, and JavaScript.
 - This page is hosted via github pages.
 ---
+## Author
+- Ayomiposi Popoola [github.com/lapope1] [ayomiposi4joy@gmail.com]
