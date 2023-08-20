@@ -44,4 +44,4 @@ project-folder/
 - This page is hosted via github pages.
 ---
 ## Author
-- Ayomiposi Popoola [github.com/lapope1] [ayomiposi4joy@gmail.com]
+- Ayomiposi Popoola [https://github.com/lapope1] [ayomiposi4joy@gmail.com]
