@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Open San, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ header {
 .home-icon svg {
     width: 24px;
     height: 24px;
-    fill: #333; /* Icon color */
+    fill: #ffffff; /* Icon color */
     margin-right: 10px;
 }
 
