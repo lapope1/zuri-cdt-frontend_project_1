@@ -27,7 +27,7 @@ header {
     padding: 8px;
     border: 1px solid #ccc;
     width: 300px;
-    text-align: ;
+    text-align: auto;
 }
 
 .form button[type="submit"] {
@@ -54,6 +54,7 @@ header {
     display: inline-flex;
     list-style: none;
     color: #fff
+    float: right
 }
 
 .topnav ul a {
