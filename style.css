@@ -57,7 +57,7 @@ header {
 }
 
 .topnav ul.active a {
-    background-color: #007bff;
+    background-color: none;
 }
 
 .topnav ul:hover a {
