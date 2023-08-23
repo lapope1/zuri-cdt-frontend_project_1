@@ -36,6 +36,7 @@ header {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-inline-end: auto;
 }
 
 .topnav {
@@ -51,7 +52,7 @@ header {
 
 .topnav ul a {
     color: #fff;
-    margin: 15px;
+    margin-inline: 15px;
     padding: 15px;
     text-decoration: none;
 }
@@ -62,4 +63,10 @@ header {
 
 .topnav ul:hover a {
     background-color: none;
+}
+
+.topnav .fa {
+margin-left: 8px;
+
+
 }
