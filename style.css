@@ -3,10 +3,13 @@ body {
     font-family: Open San, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
+    background-size: contain;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #0fbd1e;
+    background-position: center;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -20,4 +23,43 @@ header {
     margin-right: 10px;
 }
 
-/* Add more styles as needed for the rest of your page */
+.form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.form button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation section */
+.topnav {
+    background-color: #0fbd1e;
+    text-align: center;
+}
+
+.topnav ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff
+}
+
+.topnav ul a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav ul.active a {
+    background-color: #007bff;
+}
+
+.topnav ul:hover a {
+    background-color: #111;
+}
