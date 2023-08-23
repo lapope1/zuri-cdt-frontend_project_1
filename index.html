@@ -1,57 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Check My Student ID</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>Check my Student ID</title>
 </head>
 <body>
     <header>
-        <div class="home-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/> alt="Home Icon"</svg> 
-        </div>
-
-        <div class="form">
-                <form>
-                    <input type="text" placeholder="Enter your Student ID or place name">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-
-                <div class="topnav">
-                    <ul>
-                    <li class="active"><a href="#"><i class="fa-solid fa-caret-down"></i>ZUR000125U9V Lists</a></li>
-                        <li><a href="#"><i class="fa-solid fa-caret-down"></i>ZUR000125U9V Maps</a></li>
-                        <li><a href="#">Nearest ZUR000125U9V</a></li> 
-                        <li><a href="#">ZUR000125U9V Lottery</a></li>
-                        <li><a href="#"><i class="fa-solid fa-caret-down"></i>Help and Information</a></li>
-                    </ul>
+        <nav class="head">
+            <div class="left">
+                <img src="./assets/home.svg" class="logo" alt="logo">
+                <div class="head_1">
+                    <div action="" class="search">
+                        <input type="text" placeholder="StudentID or place name" class="search_input">
+                        <button class="search_btn">Search</button>
                     </div>
-        
-        </section>
+                    <ul class="links">
+                        <li class="dropdown">
+                            <a href="#" class="drop-list">ZUR000125U9V Lists ▾</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">By County</a></li>
+                                <li><a href="#">By Introduction Date</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="drop-list">ZUR000125U9V Maps ▾</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">User Type</a></li>
+                                <li><a href="#">Use Category</a></li>
+                                <li><a href="#">Council Tax Band</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nearest ZUR000125U9V</a></li>
+                        <li><a href="#">StudentID ZUR000125U9V</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Help and Information ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">About this website</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Check My Student ID ZUR000125U9V</h1>
-            <form>
-                <input type="text" placeholder="Search for a ZUR000125U9V or place your name">
-                <button type="submit">Search</button>
-                <p>Or use your device's geolocation service to find ZUR000125U9V near you</p>
-                <button type="submit">Locate Me!</button>
-            </form>
-        </div>
-    </section>
+    <main>
+        <h1>Check My ZUR000125U9V</h1>
+        <!-- hero section -->
+        <section class="hero">
+          <form>
+            <input
+              type="text"
+              name="searchBar"
+              id="searchBar"
+              placeholder="Search for a ZUR000125U9V or place name"
+            />
+            <input type="button" value="Search" />
+          </form>
+          <div class="hero_extras">
+            <span
+              >Or use your device's geolocation service to find ZUR000125U9V near
+              you!</span
+            >
+            <input type="button" value="Locate Me!" />
+          </div>
+        </section>
+        <!-- ads-content section -->
+        <section class="ads-cont">
+          <div class="ad-header">
+            <span><img src="./assets/logo.png" alt="" /></span>
+            <div class="box">
+              <form>
+                <input
+                  type="text"
+                  name="ad-search"
+                  id="adSearch"
+                  placeholder="e.g. city, region, district..."
+                />
+                <div class="date-cont">
+                  <input type="date" name="ad-date" id="adDate" />
+                  <hr />
+                  <input type="date" name="ad-date" id="adDate" />
+                </div>
+                <button><input type="button" value="Search" /></button>
+              </form>
+              <button class="guest-btn">Guests</button>
+            </div>
+          </div>
+  
+          <div class="ad-body">
+            <div class="grid-item item1">
+              <div class="item">
+                <h2>Trondheim <span></span></h2>
+                <small>45 properties</small>
+              </div>
+            </div>
+            <div class="grid-item item2">
+              <div class="item">
+                <h2>Sixt <span></span></h2>
+                <small>21 properties</small>
+              </div>
+            </div>
+            <div class="grid-item item3">
+              <div class="item">
+                <h2>Bransgore <span></span></h2>
+                <small>4 properties</small>
+              </div>
+            </div>
+            <div class="grid-item item4">
+              <div class="country1"><p><span></span> Trondheim</p> <small>from</small></div>
+              <div class="country2"><p><span></span> Sixt</p> <small>from</small></div>
+              <div class="country3"><p><span></span> Bransgore</p> <small>from</small></div>
+              <div class="country4"><p><span></span> Cala Anguila</p> <small>from</small></div>
+              <div class="country5"><p><span></span> Chiusanico</p> <small>from</small></div>
+              <div class="country6"><p><span></span> KavoÚsion</p> <small>from</small></div>
+              <div class="country7"><p><span></span> Pieve Di Ledro</p> <small>from</small></div>
+              <div class="country8"><p><span></span> Vierville-sur-Mer </p><small>from</small></div>
+            </div>
+          </div>
+          <div class="ad-footer">
+            <div class="footer-grid"><span>Double from</span></div>
+            <div class="footer-grid"><span>Double from</span></div>
+            <div class="footer-grid"><span>Double from</span></div>
+            <div class="footer-grid">
+              <button><a href="#"><img src="./assets/search-icon.svg" alt="" class="search-icon"> Discover</a></button>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Random numbers section -->
+        <section class="randomNums-cont">
+          <h1>Popular ZUR000125U9V</h1>
+          <div class="randomNums">
+            <a href="#" class="set1">SA99 1 DU</a>
+            <a href="#" class="set1">W1A 1AA</a>
+            <a href="#" class="set1">SW1A 1AA</a>
+            <a href="#" class="set1">WC2N 5DU</a>
+            <a href="#" class="set1">LE87 2BB</a>
+            <a href="#" class="set1">SL6 3QQ</a>
+            <a href="#" class="set1">BD1 1AH</a>
+            <a href="#" class="set1">WC2H 9JQ</a>
+            <a href="#" class="set1">EC1V 2NX</a>
+            <a href="#" class="set1">B61 7HA</a>
+            <a href="#" class="set2">PO16 7GZ</a>
+            <a href="#" class="set2">KY11 8ST</a>
+            <a href="#" class="set2">BA3 4YF</a>
+            <a href="#" class="set2">DY13 ONW</a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#">QU23 IW3</a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#">YE3 W24G</a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#">Y24D Z3C</a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#">QW3E FO5</a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#" class="set2"></a>
+            <a href="#">NE38 9EX</a>
+  
+          </div>
+        </section>
+        <!-- faq section -->
+        <section class="faqs">
+          <p><span>Use Check My ZUR000125U9V to find out all the key information for your local ZUR000125U9V.</span></p>
+          <p>Find out typical <span>house prices, council tax bands and business rateable values.</span></p>
+          <p>See who represents you in <span>parliament and your local councils</span>, and discover how Ofsted has rated local <span>schools.</span></p>
+          <ul class="faq-menu">
+            <li><h3>Discover related topics</h3></li>
+            <li><a href="">Fitzrovia<img src="./assets/angle-right-solid.svg" alt="" class="greater-than"></a></li>
+  
+            <li><a href="">ZUR000219VL6 for United Kingdom <img src="./assets/angle-right-solid.svg" alt="" class="greater-than"></a></li>
+  
+            <li><a href="">Cheapest ZUR000125U9V in Uk<img src="./assets/angle-right-solid.svg" alt="" class="greater-than"></a></li>
+            <li><a href="">ZUR000125U9V for United Kingdom<img src="./assets/angle-right-solid.svg" alt="" class="greater-than"></a></li>
+            <li><a href="">Mapsdata<img src="./assets/angle-right-solid.svg" alt="" class="greater-than"></a></li>
+          </ul>
+          <p>Check whether <span>superfast broadband </span>is available, and see how popular it is.</p>
+          <p>See where your ZUR000125U9V is on a <span>map.</span></p>
+          <p>Find the <span>nearestZUR000125U9V</span> to where you are right now.</p>
+          <p><span>Read what other people have said about your ZUR000125U9V, and leave your own comments for others to read.</span></p>
+        </section>
+    </main>
+    <footer>
+        <section class="main-footer">
+            <div class="footer-grid">
+              <div>
+                <ul>
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">ZUR000125U9V by Country </a></li>
+                  <li><a href="#">ZUR000125U9V by Introduction Date</a></li>
+                  <li><a href="#">ZUR000125U9V Near Me</a></li>
+                  <li><a href="#">ZUR000125U9V lottery</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">ZUR000125U9V Map by User type</a></li>
+                  <li><a href="#">ZUR000125U9V Map by Use Category</a></li>
+                  <li><a href="#">ZUR000125U9V Map by Council Tax Band</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">About this Website</a></li>
+                  <li><a href="#">Disclaimer and Limitations</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- extra footer items -->
+          <section class="extr-footer">
+            <p>Check My ZUR000125U9V</p>
+            <p>CheckMyZUR000125U9V.UK is a <a href="">Good Stuff</a> website.</p>
+          </section>
+    </footer>
 
-<section class="hero">
-    <div class="hero-content">
-    <h2>Popular ZUR000125U9V </h2>
-    <form>
-        <input type="text" placeholder=""
-    </form>
-</section>
-
+    <script src="./main.js"></script>
 </body>
 </html>
