@@ -50,9 +50,9 @@ header {
 }
 
 .topnav ul a {
-    display: block;
     color: #fff;
-    padding: 14px 16px;
+    margin: 15px;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -61,5 +61,5 @@ header {
 }
 
 .topnav ul:hover a {
-    background-color: #111;
+    background-color: none;
 }
