@@ -69,13 +69,12 @@ header {
 
 .topnav ul a {
     color: #fff;
-    margin-inline: 15px;
-    padding: 15px;
     text-decoration: none;
 }
 
-.topnav ul.active a {
+.active, .topnav ul li {
     background-color: none;
+    border-radius: 3px;
 }
 
 .topnav ul:hover a {
